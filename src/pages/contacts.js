@@ -1,6 +1,7 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
 import PrimaryLayout from "../layouts/PrimaryLayout"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <PrimaryLayout
@@ -8,6 +9,11 @@ export default () => (
     padding="pt-5"
     addClass="justify-content-md-center"
   >
+    <Helmet>
+      <title>Contact us</title>
+      <meta name="description" content="This is contacts page" />
+      <html lant="en"></html>
+    </Helmet>
     <h1>Contacts</h1>
     <Form>
       <Form.Group controlId="contactForm.Email">

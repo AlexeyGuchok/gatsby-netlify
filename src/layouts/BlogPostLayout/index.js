@@ -13,18 +13,20 @@ const BlogPostLayout = ({ data }) => {
         <meta name="description" content={post.excerpt} />
       </Helmet>
       <Header />
-      <div className="container">
-        <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-        <div>
-          {post.categories.map(el => {
-            return <span>{el.name}</span>
-          })}
+      <main>
+        <div className="container">
+          <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+          <div>
+            {post.categories.map(el => {
+              return <span>{el.name}</span>
+            })}
+          </div>
+          {post && post.featured_media && (
+            <img src={post.featured_media.source_url} />
+          )}
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
-        {post && post.featured_media && (
-          <img src={post.featured_media.source_url} />
-        )}
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </div>
+      </main>
       <Footer />
     </div>
   )

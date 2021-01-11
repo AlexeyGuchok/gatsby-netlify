@@ -10,13 +10,15 @@ const PrimaryLayout = ({
 }) => (
   <div>
     <Header />
-    <div className="container">
-      <div className={`row ${addClass}`}>
-        <div className={`col-${columnSize}`}>
-          {!padding ? children : <div className={padding}>{children}</div>}
+    <main>
+      <div className="container">
+        <div className={`row ${addClass}`}>
+          <div className={`col-${columnSize}`}>
+            {!padding ? children : <div className={padding}>{children}</div>}
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <Footer />
   </div>
 )

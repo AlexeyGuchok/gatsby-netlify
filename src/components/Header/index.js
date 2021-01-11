@@ -3,7 +3,7 @@ import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 
 export default ({ title }) => (
-  <div>
+  <header>
     <Navbar bg="light" expand="lg">
       <Navbar.Brand as={Link} to="/">
         My Blog
@@ -26,5 +26,5 @@ export default ({ title }) => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </div>
+  </header>
 )

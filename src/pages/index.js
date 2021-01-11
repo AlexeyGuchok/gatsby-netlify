@@ -11,18 +11,11 @@ export default ({ data }) => {
       <Helmet>
         <title>Main Page title</title>
         <meta name="description" content="This is main page description" />
+        <html lant="en"></html>
       </Helmet>
       {data.allWordpressPost.edges.map((el, idx) => {
         const node = el.node
-        const {
-          title,
-          date,
-          excerpt,
-          id,
-          categories,
-          slug,
-          featured_media,
-        } = node
+        const { title, date, excerpt, categories, slug, featured_media } = node
         return (
           <Post
             key={idx}
@@ -52,6 +45,7 @@ export const query = graphql`
           excerpt
           featured_media {
             source_url
+            slug
           }
         }
       }

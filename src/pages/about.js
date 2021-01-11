@@ -1,8 +1,14 @@
 import React from "react"
 import PrimaryLayout from "../layouts/PrimaryLayout"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <PrimaryLayout padding="pt-4">
+    <Helmet>
+      <title>About us | Blog</title>
+      <meta name="description" content="All information abous us!" />
+      <html lant="en"></html>
+    </Helmet>
     <h1>About Us</h1>
     <p>
       What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and
