@@ -21,7 +21,9 @@ const BlogPostLayout = ({ data }) => {
             return <span>{el.name}</span>
           })}
         </div>
-        <img src={post.featured_media.source_url} />
+        {post && post.featured_media && (
+          <img src={post.featured_media.source_url} />
+        )}
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
       <Footer />
