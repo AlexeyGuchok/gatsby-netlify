@@ -11,7 +11,6 @@ const BlogPostLayout = ({ data }) => {
       <Helmet>
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} />
-        <meta name="image" content={post.featured_media.source_url || ""} />
       </Helmet>
       <Header />
       <div className="container">
