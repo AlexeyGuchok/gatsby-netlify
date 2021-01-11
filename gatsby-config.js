@@ -24,5 +24,17 @@ module.exports = {
       },
     },
     { resolve: "gatsby-plugin-react-helmet" },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `My Blog`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#FFFFFF`,
+        display: `standalone`,
+      },
+    },
+    { resolve: "gatsby-plugin-offline" },
   ],
 }
