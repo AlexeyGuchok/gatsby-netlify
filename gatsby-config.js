@@ -6,5 +6,23 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    { resolve: "gatsby-transformer-remark" },
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: "sedat.by",
+        protocol: "https",
+        hostingWPCOM: false,
+      },
+    },
+    { resolve: "gatsby-plugin-react-helmet" },
+  ],
 }
