@@ -33,6 +33,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#FFFFFF`,
         display: `standalone`,
+        icon: `./static/Gatsby.jpg`,
       },
     },
     { resolve: "gatsby-plugin-offline" },
