@@ -11,7 +11,7 @@ export default ({ data }) => {
       <Helmet>
         <title>Main Page title</title>
         <meta name="description" content="This is main page description" />
-        <html lant="en"></html>
+        <html lang="en" />
       </Helmet>
       {data.allWordpressPost.edges.map((el, idx) => {
         const node = el.node

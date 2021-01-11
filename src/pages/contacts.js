@@ -12,7 +12,7 @@ export default () => (
     <Helmet>
       <title>Contact us</title>
       <meta name="description" content="This is contacts page" />
-      <html lant="en"></html>
+      <html lang="en" />
     </Helmet>
     <h1>Contacts</h1>
     <Form>

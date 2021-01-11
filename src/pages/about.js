@@ -7,7 +7,7 @@ export default () => (
     <Helmet>
       <title>About us | Blog</title>
       <meta name="description" content="All information abous us!" />
-      <html lant="en"></html>
+      <html lang="en" />
     </Helmet>
     <h1>About Us</h1>
     <p>

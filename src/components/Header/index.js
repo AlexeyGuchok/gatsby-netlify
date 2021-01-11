@@ -14,9 +14,6 @@ export default ({ title }) => (
           <Nav.Link as={Link} to="/">
             <b className="text-dark">Home</b>
           </Nav.Link>
-          <Nav.Link as={Link} to="/test/">
-            <b className="text-dark">Test</b>
-          </Nav.Link>
           <Nav.Link as={Link} to="/about/">
             <b className="text-dark">About</b>
           </Nav.Link>

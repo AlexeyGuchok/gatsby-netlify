@@ -11,6 +11,7 @@ const BlogPostLayout = ({ data }) => {
       <Helmet>
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} />
+        <html lang="en" />
       </Helmet>
       <Header />
       <main>
@@ -22,7 +23,7 @@ const BlogPostLayout = ({ data }) => {
             })}
           </div>
           {post && post.featured_media && (
-            <img src={post.featured_media.source_url} />
+            <img src={post.featured_media.source_url} alt={post.title} />
           )}
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>

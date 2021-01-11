@@ -19,7 +19,9 @@ const Post = ({
         <div>Теги: {tags}</div>
         <Card.Body>
           <Card.Title dangerouslySetInnerHTML={{ __html: title }} />
-          <Card.Text dangerouslySetInnerHTML={{ __html: shortDescription }} />
+          <Card.Text>
+            <div dangerouslySetInnerHTML={{ __html: shortDescription }} />
+          </Card.Text>
           <Link to={link}>{linkTitle}</Link>
         </Card.Body>
       </Card>
